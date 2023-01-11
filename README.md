@@ -8,15 +8,15 @@ In today's assignment we're going to practice React Router and build a complete 
 
 In the terminal, "cd" into the folder of your project and install dependencies by running `npm install`. Once that's done, you can start the project by running `npm run dev`.
 
-### Part one - Build Components for Home Page, About Page, Contact Page and SingleClock
+### Build Components for Home Page, About Page, Contact Page and SingleClock
 
 1. The Home Page component should contain a minimum och two Clock components.
 2. Create components for the About and Contact page and add a title to each.
 3. Make a copy of the Clock-component and name it SingleClock. Make the styles of the clock bigger.
 
-### Part two - Install react-router-dom and put the pages together into a website
+### Install react-router-dom and put the pages together into a website
 
-1. Enter `npm install react-router-dom` in the terminal
+1. Enter `npm install react-router-dom` in the terminal.
 2. Create the layout component Root.jsx that holds the navigation html code and add an <Outlet> component imported from react-router-dom that will represent the content of each page.
 3. Create the router object in the main.jsx file using the following code:
 
@@ -47,8 +47,10 @@ In the terminal, "cd" into the folder of your project and install dependencies b
 ]);
 ```
 
-Make sure you import all the components.
+Make sure you import all the Page-components. Then replace `<App />` in the JSX with the following code:
+`<RouterProvider router={router} /> `. Import `RouterProvider` from `react-router-dom`.
 
+Make sure you import all the Page-components. Then replace `<App />` in the JSX with the following code:  
 4. Update the Root.jsx component and add links to the pages Home, About and Contact using the `Link` component imported from `react-router-dom`
 5. Update Home.jsx wrapping the word `bigger` of each Clock with the `Link` component. Each link should contain a key from the object timeZones found in timeZones.js
 6. Remove the props from SingleClock.jsx and use the hook: `useParams()` from `react-router-dom` to get the cityKey
