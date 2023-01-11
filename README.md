@@ -1,6 +1,7 @@
 # Build a World Time website with React Router
 
-In today's assignment we're going to practice React Router and build a complete website
+In today's assignment we're going to practice React Router and build a complete website.
+It should look similar to this one: [World Time](https://davidshore.github.io/worldTime)
 
 ## How to complete this assignment
 
@@ -85,4 +86,6 @@ After completing this assignment you should be able to create a website with sev
 Done with the main task? Here's some ideas for things to continue with:
 
 1. Add more content to each page.
-1. Add a footer the Root.jsx
+1. Add a footer the Root.jsx.
+1. Add a 404 error page.
+1. Add bread crumbs to SingleClock page.
