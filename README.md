@@ -54,7 +54,7 @@ Then replace `<App />` in the JSX with the following code:
 
  
 5. Update the Root.jsx component and add links to the pages Home, About and Contact using the `Link` component imported from `react-router-dom`
-6. Update Home.jsx wrapping the word `bigger` of each Clock with the `Link` component. Each link should contain a key from the object timeZones found in timeZones.js
+6. Update Clock.jsx wrapping the word `bigger` with the `Link` component. Each link should contain a key from the object timeZones found in timeZones.js
 7. Remove the props from SingleClock.jsx and use the hook: `useParams()` from `react-router-dom` to get the cityKey
    from the url. import the object in timeZones.js to get the data using the cityKey.
 
