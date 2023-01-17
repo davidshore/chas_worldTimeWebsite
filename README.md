@@ -18,7 +18,7 @@ In the terminal, "cd" into the folder of your project and install dependencies b
 ### Install react-router-dom and put the pages together into a website
 
 1. Enter `npm install react-router-dom` in the terminal.
-2. Create the layout component Root.jsx that holds the navigation html code and add an <Outlet> component imported from react-router-dom that will represent the content of each page.
+2. Create the layout component Root.jsx that holds the navigation html code and add an `Outlet` component imported from react-router-dom that will represent the content of each page.
 3. Create the router object in the main.jsx file using the following code:
 
 ```
