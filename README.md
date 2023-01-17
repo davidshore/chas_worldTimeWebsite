@@ -11,7 +11,7 @@ In the terminal, "cd" into the folder of your project and install dependencies b
 
 ### Build Components for Home Page, About Page, Contact Page and SingleClock
 
-1. The Home Page component should contain a minimum och two Clock components.
+1. The Home Page component should contain a minimum of two Clock components.
 2. Create components for the About and Contact page and add a title to each.
 3. Make a copy of the Clock-component and name it SingleClock. Make the styles of the clock bigger.
 
