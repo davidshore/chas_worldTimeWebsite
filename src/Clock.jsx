@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
-
+import { Link } from 'react-router-dom'
+import { MdZoomOutMap } from 'react-icons/md';
 export default function Clock({ city, timeZone }) {
+  const [isClick, setIsClick] = useState()
   const [time, setTime] = useState();
 
   useEffect(() => {
@@ -12,14 +14,16 @@ export default function Clock({ city, timeZone }) {
 
   return (
     <div
-      className="flex md:flex-col justify-between items-center 
-    md:items-start p-6 bg-slate-200 rounded-md w-full md:w-auto mb-4"
-    >
-      <div className="text-lg text-gray-600">{city}</div>
-      <div className="text-3xl text-gray-900 font-semibold font-mono">
+      className="flex flex-col justify-between items-center md:items-center p-6 mt-5 bg-cyan-900 rounded-md w-full md:w-auto mb-4">
+      <div className=" text-white text-3xl font-bold mb-2">{city}</div>
+      <div className="text-3xl text-gray-900 bg-white p-3 m-2 rounded-xl font-semibold font-mono">
         {time}
       </div>
-      <div className=" text-gray-600 underline hover:text-gray-400">bigger</div>
+      <button title="BIGGER" type="button" className=" text-black bg-red-400 mt-3 px-3 py-2 hover:text-white" 
+      onClick={()=>setIsClick( prev=>!prev)}> <div className={isClick ?"hidden":"block"}><MdZoomOutMap/></div>
+      {isClick && <Link to={city}>BIGGER</Link>}
+      </button>
+    
     </div>
   );
 }
