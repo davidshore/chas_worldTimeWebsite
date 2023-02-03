@@ -1,14 +1,22 @@
-export const timeZones = {
-  stockholm: {
+export const timeZones = [
+  {
     city: "Stockholm",
     timeZone: "Europe/Stockholm",
     country: "Sweden",
   },
-  london: { city: "London", timeZone: "Europe/London", country: "England" },
-  newYork: { city: "New York", timeZone: "America/New_York", country: "USA" },
-  sydney: {
+  {
+    city: "London",
+    timeZone: "Europe/London",
+    country: "England",
+  },
+  {
+    city: "New York",
+    timeZone: "America/New_York",
+    country: "USA",
+  },
+  {
     city: "Sydney",
     timeZone: "Australia/Sydney",
     country: "Australia",
   },
-};
+];
